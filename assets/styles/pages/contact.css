@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/***general***********/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/****************************************************************/
 
 body {
   background-color: #2e2e2e;
@@ -14,7 +17,7 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
-/*****************************************************header**********************************/
+/**************************Navigation****************************************************/
 
 header {
   display: flex;
@@ -67,10 +70,10 @@ header {
 ul.dropdown_language.active {
   display: block;
   position: absolute;
-  top: 8vh;
-  left: 91%;
+  top: 3vh;
+  left: 83%;
   list-style: none;
-  padding-top: 2vh;
+  padding-top: 6vh;
 }
 
 ul.dropdown_language.active li {
@@ -82,7 +85,73 @@ ul.dropdown_language.active li:hover {
   cursor: pointer;
 }
 
-/******************************************aside_navigation***********************************/
+/************************************************boyound_musik*************************************/
+
+section.beyond_musik h1 {
+  font-size: 2.9em;
+  width: 34%;
+  font-weight: 300;
+  margin-bottom: 30vh;
+  margin-left: 15%;
+}
+
+section.beyond_musik .main_picture {
+  width: 100%;
+}
+
+/************************************************subscribe***************************************/
+
+.subscribe_title {
+  margin-bottom: 5vh;
+}
+
+.subscribe_contact {
+  margin-left: 20%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.subscribe_form {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.subscribe_form .input_button {
+  color: #ebccc2;
+  cursor: pointer;
+}
+
+.subscribe_form .input_area {
+  resize: none;
+}
+
+.subscribe_input {
+  background-color: #2e2e2e;
+  border: 1px solid white;
+  padding: 2%;
+  color: #ebccc2;
+}
+
+.subscribe_input:focus {
+  background-color: #877a7a;
+}
+
+.subscribe_form .input_button:hover {
+  background-color: #877a7a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input_button {
+  background-color: #2e2e2e;
+  border: none;
+  padding: 2%;
+  font-size: 1.3;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+/************************************************aside_navigation*************************/
 
 .aside_navigation {
   position: fixed;
@@ -124,80 +193,8 @@ ul.dropdown_language.active li:hover {
   background-color: #2e2e2e;
 }
 
-.aside_navigation nav ul li:hover {
+.aside_navigation nav ul li a:hover {
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
   transition: 0.3s;
-}
-
-/****************************************************main**********************************/
-
-.magical_home {
-  width: 70%;
-  margin: 0 0 20vh 20%;
-  cursor: pointer;
-}
-
-.inspiration {
-  margin-left: 20%;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.inspiration > p {
-  font-size: 1.2em;
-  margin-bottom: 2vh;
-}
-
-.inspiration h2 {
-  font-size: 2.2em;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  margin-bottom: 3vh;
-}
-
-.s_d_c {
-  display: flex;
-  gap: 1%;
-}
-
-.s_d_c p {
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  font-size: 0.8em;
-  padding: 0.5%;
-  letter-spacing: 0.1em;
-  margin-bottom: 1vh;
-}
-
-.picture_container {
-  margin-top: 18vh;
-  display: flex;
-  justify-content: space-between;
-  gap: 2%;
-}
-
-.picture_container img {
-  width: 50%;
-}
-
-.picture_container article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.picture_container article p {
-  margin-bottom: 3%;
-}
-
-.picture_container article .text {
-  width: 70%;
-  font-size: 1.2em;
-}
-
-.container2 img {
-  order: 2;
-}
-
-.container2 {
-  margin-bottom: 15vh;
 }
