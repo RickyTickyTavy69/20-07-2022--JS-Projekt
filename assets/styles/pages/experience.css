@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2e2e2e;
+  color: #ebccc2;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/*****************************************************header**********************************/
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  padding-top: 5vh;
+  top: 0;
+  margin-right: -10%;
+}
+
+.dropdown_language {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  margin-bottom: 16vh;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav .subscribe {
+  margin-left: 10%;
+}
+
+.nav a {
+  color: rgba(235, 204, 194, 0.6);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: rgba(235, 204, 194, 1);
+  transition: 0.3s;
+}
+
+.nav .social {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  list-style: none;
+  margin-right: -10%;
+}
+
+.language_choose {
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 1%;
+  margin-top: -1%;
+  margin-right: -10%;
+}
+
+.language_choose:hover {
+  text-decoration: underline;
+}
+
+ul.dropdown_language.active {
+  display: block;
+  position: absolute;
+  top: 10vh;
+  left: 91.5%;
+  list-style: none;
+  padding-top: 1vh;
+}
+
+ul.dropdown_language.active li {
+  margin-bottom: 3vh;
+}
+
+ul.dropdown_language.active li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*********************************************aside_navigation***************************************/
+div.aside {
+  background-image: url("../../img/section-experience-1.jpg");
+  width: 100%;
+  height: 100.3vh;
+  background-size: cover;
+  margin-left: -12.4%;
+  margin-top: -3%;
+  background-position: center;
+  margin-right: 5%;
+}
+
+.aside_navigation {
+  position: fixed;
+  top: 25vh;
+  float: left;
+  left: 0;
+  padding: 0 0 0 5%;
+}
+
+.aside_navigation ul {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 0 40%;
+  border-left: 1px solid white;
+}
+
+.aside_navigation nav ul li {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 13vh;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.aside_navigation nav ul li::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  position: absolute;
+  left: 40%;
+  background-color: transparent;
+}
+
+.aside_navigation nav ul li:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+
+/******************************************article***************************************************/
+
+article {
+  position: absolute;
+  top: 20%;
+  left: 52%;
+}
+
+article h1 {
+  font-size: 2.5em;
+  margin-bottom: 13vh;
+}
+
+article p {
+  font-size: 1.1em;
+  width: 60%;
+  line-height: 2em;
+  color: rgba(235, 204, 194, 0.6);
+}
+
+article .article_p1 {
+  margin-bottom: 2vh;
+}
+
+article .article_p2 {
+  margin-bottom: 2vh;
+}

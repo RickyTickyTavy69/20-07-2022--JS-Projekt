@@ -1,0 +1,172 @@
+/***general***********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/****************************************************************/
+
+body {
+  background-color: #2e2e2e;
+  color: #ebccc2;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/**************************Navigation****************************************************/
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  padding-top: 5vh;
+  top: 0;
+}
+
+.dropdown_language {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  margin-bottom: 16vh;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav a {
+  color: #ebccc2;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav .social {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  list-style: none;
+}
+
+.language_choose {
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 1%;
+  margin-top: -1%;
+}
+
+.language_choose:hover {
+  border: 2px solid #ebccc2;
+}
+
+ul.dropdown_language.active {
+  display: block;
+  position: absolute;
+  top: 3vh;
+  left: 83%;
+  list-style: none;
+  padding-top: 6vh;
+}
+
+ul.dropdown_language.active li {
+  margin-bottom: 3vh;
+}
+
+ul.dropdown_language.active li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/************************************************boyound_musik*************************************/
+
+section.beyond_musik h1 {
+  font-size: 2.9em;
+  width: 34%;
+  font-weight: 300;
+  margin-bottom: 30vh;
+  margin-left: 15%;
+}
+
+section.beyond_musik .main_picture {
+  width: 100%;
+}
+
+/************************************************design_alchemy***************************************/
+
+.design_alchemy {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  margin-bottom: 20vh;
+}
+
+.design_alchemy img {
+  width: 30%;
+}
+.design_alchemy article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.design_alchemy article h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  width: 64%;
+}
+
+.design_alchemy article p {
+  font-size: 1.4em;
+  width: 64%;
+  margin: 4vh 0 0vh 0;
+}
+
+/************************************************aside_navigation*************************/
+
+.aside_navigation {
+  position: fixed;
+  top: 25vh;
+  float: left;
+  left: 0;
+  padding: 0 0 0 5%;
+}
+
+.aside_navigation ul {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 0 40%;
+  border-left: 1px solid white;
+}
+
+.aside_navigation nav ul li {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 13vh;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.aside_navigation nav ul li::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  position: absolute;
+  left: 40%;
+  background-color: #2e2e2e;
+}
+
+.aside_navigation nav ul li:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
