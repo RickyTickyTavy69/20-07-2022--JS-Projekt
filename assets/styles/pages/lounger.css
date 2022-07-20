@@ -124,6 +124,11 @@ div.aside {
   transition: 0.3s;
 }
 
+.aside_navigation nav ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
 .aside_navigation nav ul li::before {
   content: "";
   display: block;
@@ -136,7 +141,7 @@ div.aside {
   background-color: transparent;
 }
 
-.aside_navigation nav ul li:hover {
+.aside_navigation nav ul a:hover {
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
   transition: 0.3s;

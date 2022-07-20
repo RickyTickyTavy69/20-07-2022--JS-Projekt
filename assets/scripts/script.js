@@ -10,7 +10,7 @@ languageDropdown.addEventListener("click", (event) => {
 
 /**********************************Navigation Aside */
 
-const asideNav = document.querySelector(".aside_navigation");
+/*const asideNav = document.querySelector(".aside_navigation");         ////// FUNKTIONIERT NUR LOCAL//////////////////////
 
 console.log(asideNav);
 
@@ -61,7 +61,7 @@ asideNav.addEventListener("click", (Klohaus) => {
         break;
     }
   }
-});
+});*/
 
 /********************************************inspiration */
 

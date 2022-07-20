@@ -153,6 +153,11 @@ section.beyond_musik .main_picture {
   transition: 0.3s;
 }
 
+.aside_navigation nav ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
 .aside_navigation nav ul li::before {
   content: "";
   display: block;
@@ -165,7 +170,7 @@ section.beyond_musik .main_picture {
   background-color: #2e2e2e;
 }
 
-.aside_navigation nav ul li:hover {
+.aside_navigation nav ul li a:hover {
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
   transition: 0.3s;
