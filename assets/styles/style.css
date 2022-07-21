@@ -145,7 +145,6 @@ section.beyond_musik .main_picture {
   margin: 0;
   list-style: none;
   padding: 0 0 0 40%;
-  border-left: 1px solid white;
 }
 
 .aside_navigation nav ul li {
@@ -154,6 +153,7 @@ section.beyond_musik .main_picture {
   margin-bottom: 13vh;
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
+  position: relative;
 }
 
 .aside_navigation nav ul li a {
@@ -169,12 +169,41 @@ section.beyond_musik .main_picture {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   position: absolute;
-  left: 40%;
+  left: -87%;
   background-color: #2e2e2e;
+}
+
+.aside_navigation nav ul li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80px;
+  position: absolute;
+  left: -70%;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 3.5vh;
+}
+
+.aside_navigation nav ul li:last-child:after {
+  content: "";
+  display: none;
 }
 
 .aside_navigation nav ul li a:hover {
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
   transition: 0.3s;
+}
+
+.aside_navigation nav ul li.aside_active a::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  left: -103%;
+  top: -1.2vh;
+  background-color: transparent;
 }
